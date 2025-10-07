@@ -10,16 +10,18 @@
 ## 📚 Documentation
 
 ### For Developers & AI Agents
+- **[PROJECT_INTAKE.md](PROJECT_INTAKE.md)** - ⭐ **START HERE** - Project requirements and context (fill before development)
 - **[AGENTS.md](AGENTS.md)** - AI agent instructions and development guidelines
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture and technical decisions
 - **[BACKLOG.md](BACKLOG.md)** - Implementation status and roadmap (**SINGLE SOURCE OF TRUTH**)
 - **[WORKFLOW.md](WORKFLOW.md)** - Development workflows and sprint processes
 
 ### Quick Start for AI Agents
-1. Read [AGENTS.md](AGENTS.md) - Core instructions and patterns
-2. Read [ARCHITECTURE.md](ARCHITECTURE.md) - System design
-3. Read [BACKLOG.md](BACKLOG.md) - Current status and priorities
-4. Read [WORKFLOW.md](WORKFLOW.md) - Sprint processes
+1. Read [PROJECT_INTAKE.md](PROJECT_INTAKE.md) - **Fill this first!** Essential project context
+2. Read [AGENTS.md](AGENTS.md) - Core instructions and patterns
+3. Read [ARCHITECTURE.md](ARCHITECTURE.md) - System design
+4. Read [BACKLOG.md](BACKLOG.md) - Current status and priorities
+5. Read [WORKFLOW.md](WORKFLOW.md) - Sprint processes
 
 ---
 
