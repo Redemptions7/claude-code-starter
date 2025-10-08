@@ -12,7 +12,8 @@
 1. **Documentation is code** - Keep docs in sync with implementation
 2. **Incremental progress** - Small, focused changes over large refactors
 3. **Test before commit** - Validate changes in development environment
-4. **Sprint completion** - Finish what you start, document what you finish
+4. **Security by design** - Consider security at every stage, not as afterthought
+5. **Sprint completion** - Finish what you start, document what you finish
 
 ### Goals
 - Maintain living documentation that reflects current state
@@ -29,33 +30,51 @@
 🎯 START SPRINT
 │
 ├── 1. PLANNING
-│   ├── Read relevant documentation (ARCHITECTURE.md, BACKLOG.md)
+│   ├── Read relevant documentation (ARCHITECTURE.md, BACKLOG.md, SECURITY.md)
 │   ├── Create TodoWrite task list
-│   └── Identify dependencies and risks
+│   ├── Identify dependencies and risks
+│   └── 🔐 SECURITY: Identify threats, sensitive data, auth requirements (see SECURITY.md Stage 1)
 │
-├── 2. IMPLEMENTATION
+├── 2. DESIGN/ARCHITECTURE (if needed)
+│   ├── Design component/feature architecture
+│   ├── Plan data flow
+│   └── 🔐 SECURITY: Design secure architecture, secrets management, access control (see SECURITY.md Stage 2)
+│
+├── 3. IMPLEMENTATION
 │   ├── Follow existing patterns (see AGENTS.md)
 │   ├── Write tests as you go (if applicable)
 │   ├── Document decisions in comments
-│   └── Update TodoWrite progress
+│   ├── Update TodoWrite progress
+│   └── 🔐 SECURITY: Validate input, sanitize output, no hardcoded secrets (see SECURITY.md Stage 3)
 │
-├── 3. TESTING
+├── 4. FUNCTIONAL TESTING
 │   ├── Manual testing in dev environment
 │   ├── Run automated tests (when available)
 │   ├── Verify edge cases
 │   └── Check performance impact
 │
-├── 4. EXPERIMENTATION & ITERATION
+├── 5. SECURITY TESTING (MANDATORY)
+│   ├── 🔐 Run npm audit (check dependencies)
+│   ├── 🔐 Scan for secrets in code
+│   ├── 🔐 Test authentication/authorization
+│   ├── 🔐 Test input validation (XSS, injection)
+│   └── 🔐 Review against SECURITY.md Stage 4 checklist
+│
+├── 6. EXPERIMENTATION & ITERATION
 │   ├── Try alternative approaches if needed
 │   ├── Rollback if approach doesn't work
 │   ├── Refine solution based on testing
+│   ├── Re-test security after changes
 │   └── Final implementation
 │
-└── 5. COMPLETION (MANDATORY)
+└── 7. COMPLETION (MANDATORY)
+    ├── ✅ Verify functional requirements met
+    ├── 🔐 Verify security requirements met (both independent!)
     ├── Update BACKLOG.md (status change)
     ├── Update ARCHITECTURE.md (if architectural changes)
     ├── Update AGENTS.md (if new patterns/rules)
     ├── Update README.md (if user-facing changes)
+    ├── Update SECURITY.md (if security patterns discovered)
     ├── [Update other docs if needed]
     ├── Verify all TodoWrite tasks marked complete
     └── Create sprint completion commit
@@ -63,25 +82,41 @@
 🎉 END SPRINT
 ```
 
+**⚠️ CRITICAL:** Sprint is NOT complete until BOTH functional AND security requirements are satisfied.
+
 ---
 
 ## 📋 Sprint Completion Checklist
 
 ### 🚨 CRITICAL: Never end a sprint without completing ALL items below
 
-#### Documentation Updates
-- [ ] **BACKLOG.md** - Mark features complete, update status
-- [ ] **ARCHITECTURE.md** - Document architectural changes (if any)
-- [ ] **AGENTS.md** - Add new patterns, rules, or common issues (if any)
-- [ ] **README.md** - Update version, user-facing changes (if any)
-- [ ] **[Other docs]** - Update project-specific documentation (if any)
-
-#### Code Quality
+#### Functional Requirements
 - [ ] All TodoWrite tasks marked as `completed`
+- [ ] Feature works according to specifications
 - [ ] No console errors in development
 - [ ] TypeScript compilation successful (if applicable)
 - [ ] Code follows project patterns (see AGENTS.md)
 - [ ] Commented complex logic
+- [ ] Edge cases tested
+
+#### 🔐 Security Requirements (INDEPENDENT - MUST BOTH PASS)
+- [ ] **npm audit** passed (no high/critical vulnerabilities)
+- [ ] **No secrets in code** - All secrets in environment variables
+- [ ] **Input validation** - All user inputs validated and sanitized
+- [ ] **Output sanitization** - XSS prevention in place
+- [ ] **Authentication tested** (if applicable) - Can't bypass auth
+- [ ] **Authorization tested** (if applicable) - Can't access others' data
+- [ ] **Error handling secure** - No sensitive data in error messages
+- [ ] **SECURITY.md checklist** reviewed for this feature
+- [ ] **Security concerns documented** (if any discovered)
+
+#### Documentation Updates
+- [ ] **BACKLOG.md** - Mark features complete, update status
+- [ ] **ARCHITECTURE.md** - Document architectural changes (if any)
+- [ ] **AGENTS.md** - Add new patterns, rules, or common issues (if any)
+- [ ] **SECURITY.md** - Add security patterns discovered (if any)
+- [ ] **README.md** - Update version, user-facing changes (if any)
+- [ ] **[Other docs]** - Update project-specific documentation (if any)
 
 #### Git Commit
 - [ ] Meaningful commit message (see template below)

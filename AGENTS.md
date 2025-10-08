@@ -12,10 +12,11 @@
 ## 🎯 Quick Start for AI Agents
 
 ### Required Reading (in order):
-1. **ARCHITECTURE.md** - System architecture and technical decisions
-2. **BACKLOG.md** - Current implementation status and roadmap (SINGLE SOURCE OF TRUTH)
-3. **README.md** - User-facing project information
-4. **WORKFLOW.md** - Development processes and sprint workflow
+1. **SECURITY.md** - Security requirements and practices (READ FIRST!)
+2. **ARCHITECTURE.md** - System architecture and technical decisions
+3. **BACKLOG.md** - Current implementation status and roadmap (SINGLE SOURCE OF TRUTH)
+4. **README.md** - User-facing project information
+5. **WORKFLOW.md** - Development processes and sprint workflow
 
 ### ⚠️ SINGLE SOURCE OF TRUTH:
 **BACKLOG.md** is the ONLY authoritative source for:
@@ -92,11 +93,17 @@ README.md                      # User-facing documentation
 - ❌ **Update dependencies** without testing
 - ❌ **Push to main/master** without review (if team workflow requires it)
 
-### Legal & Security
-- ❌ **Expose API keys** in code or documentation
-- ❌ **Commit `.env` or `.env.local`** to repository
-- ❌ **Skip environment variable validation**
-- ❌ **Create insecure database queries** (always use parameterized queries)
+### 🔐 Security (CRITICAL - NEVER COMPROMISE)
+- ❌ **NEVER hardcode secrets** (API keys, passwords, tokens) in code
+- ❌ **NEVER commit `.env` or `.env.local`** to repository
+- ❌ **NEVER trust user input** - always validate and sanitize
+- ❌ **NEVER use `eval()` or `new Function()`** with user data
+- ❌ **NEVER expose sensitive data** in error messages or logs
+- ❌ **NEVER skip input validation** on server-side (client-side is not enough!)
+- ❌ **NEVER create SQL queries** with string concatenation (use parameterized)
+- ❌ **NEVER disable security features** (CORS, CSRF protection, etc)
+- ❌ **NEVER deploy without** running security checks (npm audit, secret scan)
+- ❌ **NEVER assume data is safe** - sanitize output to prevent XSS
 
 ---
 
@@ -115,6 +122,19 @@ README.md                      # User-facing documentation
 - ✅ **Update types** after schema changes
 - ✅ **Test thoroughly** before marking tasks as complete
 - ✅ **Use TodoWrite tool** to track progress
+
+### 🔐 Security (Every Single Time)
+- ✅ **READ SECURITY.md** before starting ANY coding task
+- ✅ **Validate ALL user input** (type, format, length, range)
+- ✅ **Sanitize ALL output** (prevent XSS attacks)
+- ✅ **Use environment variables** for ALL secrets (never hardcode)
+- ✅ **Use parameterized queries** for database (prevent SQL injection)
+- ✅ **Check authentication** before accessing protected resources
+- ✅ **Check authorization** (user has permission for this action?)
+- ✅ **Handle errors securely** (log internally, show generic message to user)
+- ✅ **Run npm audit** before committing changes
+- ✅ **Review SECURITY.md checklist** for current development stage
+- ✅ **Think like an attacker** - "How could I break this?"
 
 ### After Completion
 - ✅ **Update BACKLOG.md** with implementation status
@@ -158,6 +178,20 @@ README.md                      # User-facing documentation
 4. Test fix
 5. Add to "Common Issues" section if applicable
 6. Update version in README.md if necessary
+```
+
+### 🔐 Security Review (Before Every Deploy)
+```
+1. Read SECURITY.md - Review all checklists
+2. Run npm audit - Fix high/critical vulnerabilities
+3. Scan for secrets - grep for API keys, tokens, passwords
+4. Test authentication - Try bypassing auth if applicable
+5. Test authorization - Try accessing other users' data
+6. Test input validation - Send malicious input (XSS, injection)
+7. Review error handling - Ensure no sensitive data exposed
+8. Check environment variables - All secrets server-side only
+9. Verify HTTPS enforced - Production uses HTTPS
+10. Complete Security Sign-Off - Use template from SECURITY.md
 ```
 
 ---
