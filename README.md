@@ -11,6 +11,7 @@
 
 ### For Developers & AI Agents
 - **[PROJECT_INTAKE.md](PROJECT_INTAKE.md)** - ⭐ **START HERE** - Project requirements and context (fill before development)
+- **[PLAN_TEMPLATE.md](PLAN_TEMPLATE.md)** - 📋 **CREATE PLAN.md** - Implementation plan template with security integration
 - **[SECURITY.md](SECURITY.md)** - 🔐 **CRITICAL** - Security requirements for all development stages
 - **[AGENTS.md](AGENTS.md)** - AI agent instructions and development guidelines
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture and technical decisions
